@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サンプルサイト</title>
+    <style>
+      /* ベースのスタイル */
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      /* ヘッダー */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+
+      /* 画像ギャラリーのレイアウト (グリッド表示) */
+      .gallery-container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        display: grid;
+        /* 画面幅に合わせて列数を自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      /* 画像カードのスタイル */
+      .card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px); /* ホバー時に少し浮き上がる */
+      }
+
+      .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; /* 画像の比率を崩さず枠に収める */
+        display: block;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+      }
+
+      /* フッター */
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #ddd;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>サンプル</h1>
+    </header>
+
+    <div class="gallery-container">
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=1"
+          alt="Random Image 1"
+        />
+        <div class="card-body">
+          <p class="card-text">写真1</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=2"
+          alt="Random Image 2"
+        />
+        <div class="card-body">
+          <p class="card-text">写真2</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=3"
+          alt="Random Image 3"
+        />
+        <div class="card-body">
+          <p class="card-text">写真3</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=4"
+          alt="Random Image 4"
+        />
+        <div class="card-body">
+          <p class="card-text">写真4</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=5"
+          alt="Random Image 5"
+        />
+        <div class="card-body">
+          <p class="card-text">写真5</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/500/400?random=6"
+          alt="Random Image 6"
+        />
+        <div class="card-body">
+          <p class="card-text">写真6</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Simple Web Site Demo</p>
+    </footer>
+  </body>
+</html>
